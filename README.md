@@ -6,10 +6,10 @@ You can clone the repository or download the zip. I have put a snort directory i
 The first commit has the rules file and wsnort.conf so that the attacks generate alerts. The fifth and sixth commits have rules files and wsnort.conf that generate no alerts. The diff clearly shows which changes are necessary to eliminate the alerts
 
 Software versions used:
-    • snort on the Virtual Machine: Snort_2_9_11_1_Installer
-    • winpcap on the Virtual Machine: WinPcap_4_1_3
-    • metasploit: Framework: 4.16.40-dev- ; Console : 4.16.40-dev-
-    • nmap: Nmap version 7.60 ( https://nmap.org )
+- snort on the Virtual Machine: Snort_2_9_11_1_Installer
+- winpcap on the Virtual Machine: WinPcap_4_1_3
+- metasploit: Framework: 4.16.40-dev- ; Console : 4.16.40-dev-
+- nmap: Nmap version 7.60 ( https://nmap.org )
 
 Network setup: Virtualbox gave me a vboxnet0 and vboxnet1 ethernet. The VM was reachable on 172.28.128.3. A second networkcard seemed to only receive on 10.0.2.15. My desktop was on 172.28.128.4.
 
