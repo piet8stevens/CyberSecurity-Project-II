@@ -1,0 +1,1 @@
+c:\snort\bin\snort.exe -c z:\Snort\etc\wsnort.conf -l z:\Snort\log -i1 %*

@@ -1,0 +1,14 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
+
+# PAS 20180222 -added to test snort
+#alert icmp any any <> $HOME_NET any (msg:"LocalR ICMP Packet PAS"; sid:10000004; rev:3;)
+#PAS 20180223 -added to test snort
+#alert ip any any <> any any (msg: "LocalR IP Packet any any";sid:10000001; rev:001; )
+#alert ip $EXTERNAL_NET any -> $HOME_NET any (msg: "LocalR IP Packet EXTERNAL_NET HOME_NET";sid:10000002; rev:001; )
+#alert ip $HOME_NET any -> $EXTERNAL_NET any (msg: "LocalR IP Packet HOME_NET EXTERNAL_NET";sid:10000003; rev:001; )
+alert tcp any any -> $HOME_NET 22 ( msg:”LocalR Potential SSH Brute Force Attack”; flow:to_server; flags:S; classtype:attempted-dos; sid:10000005; rev:4; )
